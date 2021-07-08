@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Cuisina</string>
+    <string name="food_stocks">Food Stocks</string>
+    <string name="recipes">Recipes</string>
+    <string name="clock">Clock</string>
+    <string name="calendar">Calendar</string>
 </resources>

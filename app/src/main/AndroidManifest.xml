@@ -23,6 +23,9 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.elective.cuisina.MainMenuActivity"
+            android:screenOrientation="locked"/>
+
         <activity android:name="com.elective.cuisina.HomeActivity"
             android:screenOrientation="locked"/>
 
