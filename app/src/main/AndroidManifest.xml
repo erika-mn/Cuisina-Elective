@@ -2,19 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.elective.cuisina">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:requestLegacyExternalStorage="true"
         android:theme="@style/Theme.RecipeApp">
-        <activity android:name="com.elective.cuisina.SplashActivity"
+        <activity android:name=".EventEditActivity"></activity>
+        <activity android:name=".WeekViewActivity" />
+        <activity
+            android:name=".SplashActivity"
             android:screenOrientation="locked">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,15 +25,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name="com.elective.cuisina.MainMenuActivity"
-            android:screenOrientation="locked"/>
-
-        <activity android:name="com.elective.cuisina.HomeActivity"
-            android:screenOrientation="locked"/>
-
-        <activity android:name="com.elective.cuisina.DetailActivity"
-            android:screenOrientation="locked"/>
+        <activity
+            android:name=".MainMenuActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".DetailActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".CalendarActivity"
+            android:screenOrientation="locked" />
     </application>
 
 </manifest>

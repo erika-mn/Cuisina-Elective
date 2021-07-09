@@ -68,7 +68,6 @@
                 android:src="@drawable/ic_fav_unfill"/>
 
 
-
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
