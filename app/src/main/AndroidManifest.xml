@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.elective.cuisina">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -16,6 +17,8 @@
         android:theme="@style/Theme.RecipeApp">
         <activity android:name=".EventEditActivity"></activity>
         <activity android:name=".WeekViewActivity" />
+
+
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="locked">
@@ -24,6 +27,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
+
         </activity>
         <activity
             android:name=".MainMenuActivity"
@@ -34,6 +40,11 @@
         <activity
             android:name=".DetailActivity"
             android:screenOrientation="locked" />
+
+        <activity android:name=".Clock_Alarm"
+            android:screenOrientation="locked" />
+        <receiver android:name=".clockpackage.AlertReceiver"/>
+
         <activity
             android:name=".CalendarActivity"
             android:screenOrientation="locked" />

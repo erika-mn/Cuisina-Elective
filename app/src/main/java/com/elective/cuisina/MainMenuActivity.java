@@ -24,6 +24,15 @@ public class MainMenuActivity extends AppCompatActivity {
             }
         });
 
+        button = (Button) findViewById(R.id.button3);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                openClock_Alarm();
+        }
+    });
+
+
         button = (Button) findViewById(R.id.button4);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,10 +43,17 @@ public class MainMenuActivity extends AppCompatActivity {
         });
     }
 
+
     public void openHomeActivity() {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
+        }
+
+    public void openClock_Alarm(){
+        Intent intent = new Intent(this, Clock_Alarm.class);
+        startActivity(intent);
     }
+
 
     public void openCalendarActivity() {
         Intent intent = new Intent(this, CalendarActivity.class);
