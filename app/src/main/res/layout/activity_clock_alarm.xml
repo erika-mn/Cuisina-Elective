@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/alarm_bg"
     tools:context="com.elective.cuisina.Clock_Alarm">
-
 
     <TextView
         android:id="@+id/textView"
@@ -14,31 +14,40 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="269dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="93dp"
         android:text="No Alarm set"
-        android:textSize="35sp" />
+        android:fontFamily="@font/acid"
+        android:textSize="@dimen/_50ssp" />
 
     <Button
         android:id="@+id/button_timepicker"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_115sdp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="138dp"
-        android:layout_marginTop="388dp"
-        android:text="open time picker" />
+        android:layout_marginTop="@dimen/_269sdp"
+        android:text="open time picker"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:fontFamily="@font/acid_bold"/>
 
     <Button
         android:id="@+id/button_cancel"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_115sdp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="135dp"
+        android:layout_marginEnd="123dp"
         android:layout_marginBottom="200dp"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:fontFamily="@font/acid_bold"
+        android:textSize="@dimen/_15sdp"
         android:text="cancel alarm" />
 
 
