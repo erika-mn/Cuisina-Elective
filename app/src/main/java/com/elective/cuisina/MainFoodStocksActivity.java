@@ -26,7 +26,7 @@ public class MainFoodStocksActivity extends AppCompatActivity {
     }
 
     public void openFruitsActivity(){
-        Intent intent = new Intent(this, FruitsActivity.class);
+        Intent intent = new Intent(this, zFruitsmain.class);
         startActivity(intent);
     }
 }

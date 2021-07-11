@@ -19,7 +19,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RecipeApp">
-        <activity android:name=".FruitsActivity"></activity>
+        <activity android:name=".zFruitsview"></activity>
+        <activity android:name=".zFruitsmain" />
+        <activity android:name=".zStudents" />
+        <activity android:name=".zFruitsedit" />
         <activity android:name=".EventEditActivity" />
         <activity android:name=".WeekViewActivity" />
         <activity
