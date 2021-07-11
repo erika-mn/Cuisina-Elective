@@ -1,17 +1,18 @@
 package com.elective.cuisina;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class zFruitsedit extends AppCompatActivity {
+public class yMeatedit extends AppCompatActivity {
 
     EditText ed1,ed2,ed3,ed4;
     Button b1,b2,b3;
@@ -20,7 +21,7 @@ public class zFruitsedit extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.zactivity_zfruitsedit);
+        setContentView(R.layout.yactivity_ymeatedit);
 
 
         ed1 = findViewById(R.id.name);
@@ -58,7 +59,7 @@ public class zFruitsedit extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(getApplicationContext(),zFruitsview.class);
+                Intent i = new Intent(getApplicationContext(),yMeatview.class);
                 startActivity(i);
 
             }
@@ -82,10 +83,10 @@ public class zFruitsedit extends AppCompatActivity {
         {
             String id = ed4.getText().toString();
 
-            SQLiteDatabase db = openOrCreateDatabase("SliteDb",Context.MODE_PRIVATE,null);
+            SQLiteDatabase db = openOrCreateDatabase("SliteDb", Context.MODE_PRIVATE,null);
 
 
-            String sql = "delete from records1 where id = ?";
+            String sql = "delete from records2 where id = ?";
             SQLiteStatement statement = db.compileStatement(sql);
 
             statement.bindString(1,id);
@@ -149,7 +150,7 @@ public class zFruitsedit extends AppCompatActivity {
             SQLiteDatabase db = openOrCreateDatabase("SliteDb",Context.MODE_PRIVATE,null);
 
 
-            String sql = "update records1 set name = ?,course=?,fee=? where id= ?";
+            String sql = "update records2 set name = ?,course=?,fee=? where id= ?";
             SQLiteStatement statement = db.compileStatement(sql);
             statement.bindString(1,name);
             statement.bindString(2,course);
@@ -174,11 +175,4 @@ public class zFruitsedit extends AppCompatActivity {
 
 
     }
-
-
-
-
-
-
-
 }

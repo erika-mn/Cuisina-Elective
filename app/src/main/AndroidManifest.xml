@@ -19,7 +19,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RecipeApp">
-        <activity android:name=".zFruitsview"></activity>
+        <activity android:name=".xDairyedit"></activity>
+        <activity
+            android:name=".xDairyview"
+            android:label="@string/title_activity_xdairyview"
+            android:theme="@style/Theme.RecipeApp.NoActionBar" />
+        <activity android:name=".xDairymain" />
+        <activity android:name=".yMeatedit" />
+        <activity android:name=".yMeatview" />
+        <activity android:name=".yMeatmain" />
+        <activity android:name=".zFruitsview" />
         <activity android:name=".zFruitsmain" />
         <activity android:name=".zStudents" />
         <activity android:name=".zFruitsedit" />

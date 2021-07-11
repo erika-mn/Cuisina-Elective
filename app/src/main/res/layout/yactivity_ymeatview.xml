@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".zFruitsview">
+    tools:context=".yMeatview">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginBottom="30dp"
-        android:text="Fruits Inventory"
+        android:text="Meat Inventory"
         android:textAlignment="center"
         />
 
@@ -20,4 +20,5 @@
         android:layout_height="match_parent"
         android:id="@+id/lst1"
         />
+
 </LinearLayout>

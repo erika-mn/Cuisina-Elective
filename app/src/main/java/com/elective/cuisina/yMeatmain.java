@@ -1,17 +1,18 @@
 package com.elective.cuisina;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
-import androidx.appcompat.app.*;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class zFruitsmain extends AppCompatActivity {
+public class yMeatmain extends AppCompatActivity {
 
     EditText ed1,ed2,ed3;
     Button b1,b2;
@@ -21,7 +22,7 @@ public class zFruitsmain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.zactivity_zfruitsmain);
+        setContentView(R.layout.yactivity_ymeatmain);
 
 
         ed1 = findViewById(R.id.name);
@@ -36,7 +37,7 @@ public class zFruitsmain extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(getApplicationContext(),zFruitsview.class);
+                Intent i = new Intent(getApplicationContext(),yMeatview.class);
                 startActivity(i);
 
 
@@ -66,10 +67,10 @@ public class zFruitsmain extends AppCompatActivity {
             String fee = ed3.getText().toString();
 
 
-            SQLiteDatabase db = openOrCreateDatabase("SliteDb",Context.MODE_PRIVATE,null);
-            db.execSQL("CREATE TABLE IF NOT EXISTS records1(id INTEGER PRIMARY KEY ,name VARCHAR,course VARCHAR,fee VARCHAR)");
+            SQLiteDatabase db = openOrCreateDatabase("SliteDb", Context.MODE_PRIVATE,null);
+            db.execSQL("CREATE TABLE IF NOT EXISTS records2(id INTEGER PRIMARY KEY AUTOINCREMENT,name VARCHAR,course VARCHAR,fee VARCHAR)");
 
-            String sql = "insert into records1(name,course,fee)values(?,?,?)";
+            String sql = "insert into records2(name,course,fee)values(?,?,?)";
             SQLiteStatement statement = db.compileStatement(sql);
             statement.bindString(1,name);
             statement.bindString(2,course);
@@ -93,15 +94,4 @@ public class zFruitsmain extends AppCompatActivity {
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
 }
