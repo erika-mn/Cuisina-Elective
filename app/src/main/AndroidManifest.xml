@@ -7,6 +7,10 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-feature
+        android:name="android.hardware.sensor.compass"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,10 +19,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RecipeApp">
-        <activity android:name=".EventEditActivity"></activity>
+        <activity android:name=".FruitsActivity"></activity>
+        <activity android:name=".EventEditActivity" />
         <activity android:name=".WeekViewActivity" />
-
-
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="locked">
@@ -27,9 +30,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
-
         </activity>
         <activity
             android:name=".MainMenuActivity"
@@ -40,10 +40,14 @@
         <activity
             android:name=".DetailActivity"
             android:screenOrientation="locked" />
-
-        <activity android:name=".Clock_Alarm"
+        <activity
+            android:name=".Clock_Alarm"
             android:screenOrientation="locked" />
-        <receiver android:name=".clockpackage.AlertReceiver"/>
+        <activity
+            android:name=".MainFoodStocksActivity"
+            android:screenOrientation="locked" />
+
+        <receiver android:name=".clockpackage.AlertReceiver" />
 
         <activity
             android:name=".CalendarActivity"

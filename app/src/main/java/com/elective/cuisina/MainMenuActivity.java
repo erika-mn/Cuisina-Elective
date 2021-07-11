@@ -41,6 +41,15 @@ public class MainMenuActivity extends AppCompatActivity {
                 openCalendarActivity();
             }
         });
+
+        button = (Button) findViewById(R.id.button2);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                openFoodStocksActivity();
+            }
+        });
     }
 
 
@@ -48,6 +57,11 @@ public class MainMenuActivity extends AppCompatActivity {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
         }
+
+    public void openFoodStocksActivity() {
+        Intent intent = new Intent(this, MainFoodStocksActivity.class);
+        startActivity(intent);
+    }
 
     public void openClock_Alarm(){
         Intent intent = new Intent(this, Clock_Alarm.class);

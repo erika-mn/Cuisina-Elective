@@ -6,4 +6,23 @@
     <string name="calendar">Calendar</string>
     <string name="back"><![CDATA[<-]]></string>
     <string name="forward"><![CDATA[->]]></string>
+
+    <string name="insert_picture">Insert Picture</string>
+    <string name="fruits">Fruits</string>
+    <string name="meat">Meat</string>
+    <string name="dairy">Dairy</string>
+    <string name="vegetable">Vegetable</string>
+    <string name="condiments">Condiments</string>
+    <string name="ret">Back</string>
+
+    <string name="title_activity_fruits">ScrollingActivity</string>
+    <string name="title_activity_meat">ScrollingActivity</string>
+    <string name="title_activity_dairy">ScrollingActivity</string>
+    <string name="title_activity_vegetable">ScrollingActivity</string>
+    <string name="title_activity_condiments">ScrollingActivity</string>
+
+    <string name="ingredient_name">Ingredient Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="expiration_date">Expiration Date</string>
+    <string name="add">Add</string>
 </resources>
