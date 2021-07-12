@@ -21,27 +21,33 @@
 
     <Button
         android:id="@+id/AlarmBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_115sdp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="88dp"
-        android:layout_marginBottom="370dp"
-        android:text="Set Alarm"
-        android:textSize="40dp" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="@dimen/_269sdp"
+        android:text="set alarm"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:fontFamily="@font/acid_bold"/>
 
     <Button
         android:id="@+id/TimerBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_115sdp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="92dp"
-        android:layout_marginBottom="199dp"
-        android:text="Set Timer"
-        android:textSize="40dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="200dp"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:fontFamily="@font/acid_bold"
+        android:textSize="@dimen/_15sdp"
+        android:text="set alarm" />
 
 
 </RelativeLayout>

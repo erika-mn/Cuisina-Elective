@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
             android:text="Vegetables Inventory"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/black"
             android:textSize="30dp"
 
             />
@@ -109,6 +109,7 @@
             android:layout_weight="1"
             android:id="@+id/bt1"
             android:text="Add"
+            android:textColor="@color/white"
             android:background="@color/green"
             />
         <Button
@@ -118,6 +119,7 @@
             android:layout_weight="1"
             android:id="@+id/bt2"
             android:text="View List"
+            android:textColor="@color/white"
             android:background="@color/green"
             />
 

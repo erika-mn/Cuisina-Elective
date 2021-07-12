@@ -21,44 +21,44 @@
 
     <Button
         android:id="@+id/buttonFruitsActivity"
-        android:text="Fruits"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_marginBottom="30dp"
-        android:layout_marginHorizontal="30dp"
+        android:layout_marginHorizontal="55dp"
+        android:background="@drawable/fruits"
         />
 
     <Button
         android:id="@+id/buttonMeatActivity"
-        android:text="Meat"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_marginBottom="30dp"
-        android:layout_marginHorizontal="30dp"/>
+        android:layout_marginHorizontal="55dp"
+        android:background="@drawable/meat"/>
 
     <Button
         android:id="@+id/buttonDairyActivity"
-        android:text="Dairy"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_marginBottom="30dp"
-        android:layout_marginHorizontal="30dp"/>
+        android:layout_marginHorizontal="55dp"
+        android:background="@drawable/dairy"/>
 
     <Button
         android:id="@+id/buttonVegetableActivity"
-        android:text="Vegetables"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_marginBottom="30dp"
-        android:layout_marginHorizontal="30dp"/>
+        android:layout_marginHorizontal="55dp"
+        android:background="@drawable/vegetables" />
 
     <Button
         android:id="@+id/buttonCondimentsActivity"
-        android:text="Condiments"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_marginBottom="30dp"
-        android:layout_marginHorizontal="30dp"/>
+        android:layout_marginHorizontal="55dp"
+        android:background="@drawable/condiments" />
 
 </LinearLayout>
 </ScrollView>

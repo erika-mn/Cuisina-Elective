@@ -20,8 +20,6 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.elective.cuisina.databinding.XactivityXdairyviewBinding;
-
 import java.util.ArrayList;
 
 public class xDairyview extends AppCompatActivity {
@@ -99,9 +97,6 @@ public class xDairyview extends AppCompatActivity {
 
             }
         });
-
-
-
 
 
 

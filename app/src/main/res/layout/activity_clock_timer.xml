@@ -26,7 +26,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="-5dp"
         android:layout_toEndOf="@+id/edit_text_input"
-        android:text="Set" />
+        android:text="Set"
+        android:background="@color/green"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/text_view_countdown"
@@ -44,7 +46,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_view_countdown"
         android:layout_centerHorizontal="true"
-        android:text="start" />
+        android:text="start"
+        android:background="@color/green"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/button_reset"
@@ -57,7 +61,9 @@
         android:layout_toEndOf="@+id/button_start_pause"
         android:text="reset"
         android:visibility="invisible"
-        tools:visibility="visible" />
+        tools:visibility="visible"
+        android:background="@color/green"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/StopRingtone"
@@ -67,17 +73,21 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="26dp"
         android:layout_marginBottom="95dp"
-        android:text="Terminate Ringtone" />
+        android:text="Terminate Ringtone"
+        android:background="@color/green"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/clearTimer"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_100sdp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="101dp"
-        android:text="clear timer" />
+        android:text="clear timer"
+        android:background="@color/green"
+        android:textColor="@color/white"/>
 
 
 </RelativeLayout>

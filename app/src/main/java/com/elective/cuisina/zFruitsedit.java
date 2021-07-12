@@ -156,7 +156,7 @@ public class zFruitsedit extends AppCompatActivity {
             statement.bindString(3,fee);
             statement.bindString(4,id);
             statement.execute();
-            Toast.makeText(this,"Record Updateddd",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Record Updated",Toast.LENGTH_LONG).show();
 
 
             ed1.setText("");

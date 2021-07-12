@@ -57,17 +57,6 @@
                 android:id="@+id/imgToolbarBtnBack"
                 android:src="@drawable/ic_back"/>
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/_8sdp"
-                android:layout_margin="@dimen/_10sdp"
-                android:layout_gravity="end"
-                android:background="@drawable/btn_bg2"
-                android:id="@+id/imgToolbarBtnFav"
-                android:src="@drawable/ic_fav_unfill"/>
-
-
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 

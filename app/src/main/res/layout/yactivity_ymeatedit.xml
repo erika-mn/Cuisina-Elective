@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Meat Inventory"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/black"
             android:textSize="30dp"
 
             />
@@ -127,7 +127,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/green"
-            android:text="Edit" />
+            android:text="Edit"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/bt2"
@@ -136,6 +137,7 @@
             android:layout_marginLeft="30dp"
             android:layout_weight="1"
             android:background="@color/green"
+            android:textColor="@color/white"
             android:text="Delete" />
 
     </LinearLayout>
@@ -152,7 +154,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/green"
-            android:text="Back" />
+            android:text="Back"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
