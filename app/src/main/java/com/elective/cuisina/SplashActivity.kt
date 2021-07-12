@@ -29,7 +29,7 @@ class SplashActivity : BaseActivity(), EasyPermissions.RationaleCallbacks,
         readStorageTask()
 
         btnGetStarted.setOnClickListener {
-            var intent = Intent(this@SplashActivity, MainMenuActivity::class.java)
+            var intent = Intent(this@SplashActivity, login::class.java)
             startActivity(intent)
             finish()
         }

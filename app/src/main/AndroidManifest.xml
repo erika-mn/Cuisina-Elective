@@ -54,6 +54,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".login"
+            android:screenOrientation="locked" />
+        <activity
             android:name=".MainMenuActivity"
             android:screenOrientation="locked" />
         <activity
@@ -65,11 +68,9 @@
         <activity
             android:name=".Clock_Alarm"
             android:screenOrientation="locked" />
-
         <activity
             android:name=".Clock_Timer"
-            android:screenOrientation="locked"/>
-
+            android:screenOrientation="locked" />
         <activity
             android:name=".MainFoodStocksActivity"
             android:screenOrientation="locked" />
