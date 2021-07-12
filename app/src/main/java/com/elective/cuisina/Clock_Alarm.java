@@ -25,6 +25,7 @@ import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.Date;
 
 
 public class Clock_Alarm extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
@@ -52,15 +53,6 @@ public class Clock_Alarm extends AppCompatActivity implements TimePickerDialog.O
                 cancelAlarm();
             }
         });
-        imgbutton = (ImageButton) findViewById(R.id.Backbtn);
-        imgbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                openBackHomeClock();
-            }
-        });
-
 
     }
 
@@ -74,22 +66,15 @@ public class Clock_Alarm extends AppCompatActivity implements TimePickerDialog.O
         startAlarm(c);
 
 
-        Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
-        Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
 
-        Timer t = new Timer();
-            t.scheduleAtFixedRate(new TimerTask() {
-                @Override
-                public void run() {
+        /*Uri ringtone = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+        Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), ringtone);
+        if(hours == Calendar.HOUR_OF_DAY && minutes == Calendar.MINUTE){
+            r.play();
+        }*/
 
-                    if (Calendar.getInstance().equals(minute & hourOfDay)){
-                        r.play();
-                    }
-                    else {
-                        r.stop();
-                    }
-                }
-            }, 0, 1000);
+
+
     }
 
 
@@ -106,8 +91,12 @@ public class Clock_Alarm extends AppCompatActivity implements TimePickerDialog.O
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
         if (c.before(Calendar.getInstance())) {
             c.add(Calendar.DATE, 1);
+
+
         }
         alarmManager.setExact(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), pendingIntent);
+
+
     }
     private void cancelAlarm() {
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
@@ -115,11 +104,8 @@ public class Clock_Alarm extends AppCompatActivity implements TimePickerDialog.O
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
         alarmManager.cancel(pendingIntent);
         mTextView.setText("Alarm canceled");
-    }
 
 
-    public void openBackHomeClock() {
-        Intent intent = new Intent(this, HomeClock.class);
-        startActivity(intent);
     }
+
 }

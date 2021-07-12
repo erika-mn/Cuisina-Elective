@@ -35,15 +35,6 @@ public class HomeClock extends AppCompatActivity {
             }
         });
 
-        imgbutton = (ImageButton) findViewById(R.id.Backbtn);
-        imgbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                openMainMenuActivity();
-            }
-        });
-
     }
 
     public void openAlarmActivity() {
@@ -53,11 +44,6 @@ public class HomeClock extends AppCompatActivity {
 
     public void openTimerActivity() {
         Intent intent = new Intent(this, Clock_Timer.class);
-        startActivity(intent);
-    }
-
-    public void openMainMenuActivity() {
-        Intent intent = new Intent(this, MainMenuActivity.class);
         startActivity(intent);
     }
 }

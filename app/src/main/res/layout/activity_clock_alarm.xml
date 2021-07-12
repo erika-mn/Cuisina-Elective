@@ -49,17 +49,5 @@
         android:textSize="@dimen/_15sdp"
         android:text="cancel alarm" />
 
-    <ImageButton
-        android:id="@+id/Backbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="14dp"
-        android:layout_marginBottom="11dp"
-        app:srcCompat="@drawable/ic_back" />
-
-
-
 
 </RelativeLayout>

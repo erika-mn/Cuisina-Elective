@@ -19,7 +19,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RecipeApp">
-        <activity android:name=".Clock_Timer"></activity>
         <activity android:name=".HomeClock" />
         <activity android:name=".vCondimentsview" />
         <activity android:name=".vCondimentsedit" />
@@ -66,6 +65,11 @@
         <activity
             android:name=".Clock_Alarm"
             android:screenOrientation="locked" />
+
+        <activity
+            android:name=".Clock_Timer"
+            android:screenOrientation="locked"/>
+
         <activity
             android:name=".MainFoodStocksActivity"
             android:screenOrientation="locked" />
