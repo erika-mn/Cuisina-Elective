@@ -1,6 +1,9 @@
 package com.elective.cuisina;
 
-public class zStudents {
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class zStudents extends AppCompatActivity {
 
     String id;
     String name;

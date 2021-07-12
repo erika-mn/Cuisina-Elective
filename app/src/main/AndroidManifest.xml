@@ -19,7 +19,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RecipeApp">
-        <activity android:name=".xDairyedit"></activity>
+        <activity android:name=".Clock_Timer"></activity>
+        <activity android:name=".HomeClock" />
+        <activity android:name=".vCondimentsview" />
+        <activity android:name=".vCondimentsedit" />
+        <activity
+            android:name=".vCondimentsmain"
+            android:label="@string/title_activity_vcondimentsmain"
+            android:theme="@style/Theme.RecipeApp.NoActionBar" />
+        <activity android:name=".wVegetablesview" />
+        <activity android:name=".wVegetablesedit" />
+        <activity android:name=".wVegetablesmain" />
+        <activity android:name=".xDairyedit" />
         <activity
             android:name=".xDairyview"
             android:label="@string/title_activity_xdairyview"

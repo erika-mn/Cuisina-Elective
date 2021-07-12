@@ -28,7 +28,7 @@ public class MainMenuActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                openClock_Alarm();
+                openHomeClock();
         }
     });
 
@@ -63,8 +63,8 @@ public class MainMenuActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openClock_Alarm(){
-        Intent intent = new Intent(this, Clock_Alarm.class);
+    public void openHomeClock(){
+        Intent intent = new Intent(this, HomeClock.class);
         startActivity(intent);
     }
 

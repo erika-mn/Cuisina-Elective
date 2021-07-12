@@ -40,7 +40,7 @@ public class MainFoodStocksActivity extends AppCompatActivity {
             }
         });
 
-        /*button = (Button) findViewById(R.id.buttonVegetableActivity);
+        button = (Button) findViewById(R.id.buttonVegetableActivity);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -54,7 +54,7 @@ public class MainFoodStocksActivity extends AppCompatActivity {
             public void onClick(View v){
                 openCondimentsActivity();
             }
-        });*/
+        });
     }
 
     public void openFruitsActivity(){
@@ -72,7 +72,7 @@ public class MainFoodStocksActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    /*public void openVegetablesActivity(){
+    public void openVegetablesActivity(){
         Intent intent = new Intent(this, wVegetablesmain.class);
         startActivity(intent);
     }
@@ -80,5 +80,5 @@ public class MainFoodStocksActivity extends AppCompatActivity {
     public void openCondimentsActivity(){
         Intent intent = new Intent(this, vCondimentsmain.class);
         startActivity(intent);
-    }*/
+    }
 }

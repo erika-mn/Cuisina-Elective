@@ -7,9 +7,14 @@ import android.content.Context;
 import android.content.Intent;
 import androidx.fragment.app.DialogFragment;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.media.Ringtone;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
@@ -18,8 +23,14 @@ import com.elective.cuisina.clockpackage.TimePickerFragment;
 
 import java.text.DateFormat;
 import java.util.Calendar;
+import java.util.Timer;
+import java.util.TimerTask;
+
 
 public class Clock_Alarm extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
+    private  int hours;
+    private  int minutes;
+    ImageButton imgbutton;
     private TextView mTextView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +52,16 @@ public class Clock_Alarm extends AppCompatActivity implements TimePickerDialog.O
                 cancelAlarm();
             }
         });
+        imgbutton = (ImageButton) findViewById(R.id.Backbtn);
+        imgbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                openBackHomeClock();
+            }
+        });
+
+
     }
 
     @Override
@@ -51,7 +72,29 @@ public class Clock_Alarm extends AppCompatActivity implements TimePickerDialog.O
         c.set(Calendar.SECOND, 0);
         updateTimeText(c);
         startAlarm(c);
+
+
+        Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
+        Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
+
+        Timer t = new Timer();
+            t.scheduleAtFixedRate(new TimerTask() {
+                @Override
+                public void run() {
+
+                    if (Calendar.getInstance().equals(minute & hourOfDay)){
+                        r.play();
+                    }
+                    else {
+                        r.stop();
+                    }
+                }
+            }, 0, 1000);
     }
+
+
+
+
     private void updateTimeText(Calendar c) {
         String timeText = "Alarm set for: ";
         timeText += DateFormat.getTimeInstance(DateFormat.SHORT).format(c.getTime());
@@ -72,5 +115,11 @@ public class Clock_Alarm extends AppCompatActivity implements TimePickerDialog.O
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
         alarmManager.cancel(pendingIntent);
         mTextView.setText("Alarm canceled");
+    }
+
+
+    public void openBackHomeClock() {
+        Intent intent = new Intent(this, HomeClock.class);
+        startActivity(intent);
     }
 }

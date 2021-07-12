@@ -1,22 +1,20 @@
 package com.elective.cuisina;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import androidx.appcompat.app.*;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-
 import java.util.ArrayList;
 
-
-public class zFruitsview extends AppCompatActivity {
-
+public class wVegetablesview extends AppCompatActivity {
 
     ListView lst1;
     ArrayList<String> titles = new ArrayList<String>();
@@ -26,12 +24,12 @@ public class zFruitsview extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.zactivity_zfruitsview);
+        setContentView(R.layout.wactivity_wvegetablesview);
 
-        SQLiteDatabase db = openOrCreateDatabase("SliteDb",Context.MODE_PRIVATE,null);
+        SQLiteDatabase db = openOrCreateDatabase("SliteDb", Context.MODE_PRIVATE,null);
 
         lst1 = findViewById(R.id.lst1);
-        final Cursor c = db.rawQuery("select * from records1",null);
+        final Cursor c = db.rawQuery("select * from records4",null);
         int id = c.getColumnIndex("id");
         int name = c.getColumnIndex("name");
         int course = c.getColumnIndex("course");
@@ -78,7 +76,7 @@ public class zFruitsview extends AppCompatActivity {
                 String aa = titles.get(position).toString();
 
                 zStudents stu = stud.get(position);
-                Intent i = new Intent(getApplicationContext(),zFruitsedit.class);
+                Intent i = new Intent(getApplicationContext(),wVegetablesedit.class);
 
                 i.putExtra("id",stu.id);
                 i.putExtra("name",stu.name);
@@ -98,6 +96,4 @@ public class zFruitsview extends AppCompatActivity {
 
 
     }
-
-
 }
