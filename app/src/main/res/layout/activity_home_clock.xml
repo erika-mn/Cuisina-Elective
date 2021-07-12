@@ -6,18 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".HomeClock">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="370dp"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="56dp"
-        android:fontFamily="@font/acid_bold"
-        android:text="Welcome to Cuisina Clock"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="80dp" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/header_clk"/>
 
     <Button
         android:id="@+id/AlarmBtn"

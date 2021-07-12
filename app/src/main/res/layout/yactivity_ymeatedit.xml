@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".yMeatedit"
+    android:background="@drawable/background"
     android:gravity="center">
 
     <LinearLayout

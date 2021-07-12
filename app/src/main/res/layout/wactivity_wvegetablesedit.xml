@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".wVegetablesedit"
     android:orientation="vertical"
+    android:background="@drawable/background"
     android:gravity="center"
     >
 
