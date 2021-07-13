@@ -4,70 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/menubg"
+    android:background="@color/dirty_white"
     tools:context=".MainMenuActivity">
 
 <ImageView
     android:id="@+id/mainmenutop"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_150sdp"
+    android:layout_height="@dimen/_155sdp"
     android:text="@string/app_name"
     android:tileMode="disabled"
-    android:gravity="center"/>
+    android:gravity="center"
+    android:background="@drawable/menu_hder"/>
 
 <Button
     android:id="@+id/button"
-    android:layout_width="@dimen/_125sdp"
-    android:layout_height="@dimen/_125sdp"
+    android:layout_width="@dimen/_135sdp"
+    android:layout_height="@dimen/_124sdp"
     android:layout_alignParentStart="true"
     android:layout_alignParentTop="true"
-    android:layout_marginStart="25dp"
+    android:layout_marginStart="20dp"
     android:layout_marginTop="@dimen/_200sdp"
-    android:text="Cookbook"
     android:textColor="@color/white"
     android:fontFamily="@font/acid_bold"
     android:textSize="@dimen/_20ssp"
-    android:background="@drawable/btn_bg3"/>
+    android:background="@drawable/cb_ac"/>
 
 <Button
     android:id="@+id/button2"
-    android:layout_width="@dimen/_125sdp"
+    android:layout_width="@dimen/_135sdp"
     android:layout_height="@dimen/_125sdp"
     android:layout_alignParentTop="true"
     android:layout_alignParentEnd="true"
     android:layout_marginTop="@dimen/_200sdp"
-    android:layout_marginEnd="25dp"
-    android:text="Food Stocks"
+    android:layout_marginEnd="20dp"
     android:fontFamily="@font/acid_bold"
     android:textSize="@dimen/_20ssp"
     android:textColor="@color/white"
-    android:background="@drawable/btn_bg3"/>
+    android:background="@drawable/fs_ic"/>
 
 <Button
     android:id="@+id/button3"
-    android:layout_width="@dimen/_125sdp"
+    android:layout_width="@dimen/_135sdp"
     android:layout_height="@dimen/_125sdp"
     android:layout_alignParentStart="true"
     android:layout_alignParentBottom="true"
-    android:layout_marginStart="25dp"
+    android:layout_marginStart="20dp"
     android:layout_marginBottom="@dimen/_75sdp"
-    android:text="Clock"
     android:fontFamily="@font/acid_bold"
     android:textSize="@dimen/_20ssp"
     android:textColor="@color/white"
-    android:background="@drawable/btn_bg3"/>
+    android:background="@drawable/ac_ic"/>
 
 <Button
     android:id="@+id/button4"
-    android:layout_width="@dimen/_125sdp"
+    android:layout_width="@dimen/_135sdp"
     android:layout_height="@dimen/_125sdp"
     android:layout_alignParentEnd="true"
     android:layout_alignParentBottom="true"
-    android:layout_marginEnd="25dp"
+    android:layout_marginEnd="20dp"
     android:layout_marginBottom="@dimen/_75sdp"
-    android:text="Calendar"
     android:fontFamily="@font/acid_bold"
     android:textSize="@dimen/_20ssp"
     android:textColor="@color/white"
-    android:background="@drawable/btn_bg3"/>
+    android:background="@drawable/cal_ic"/>
 </RelativeLayout>

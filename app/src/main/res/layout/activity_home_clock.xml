@@ -47,7 +47,7 @@
         android:textColor="@color/white"
         android:fontFamily="@font/acid_bold"
         android:textSize="@dimen/_15sdp"
-        android:text="set alarm" />
+        android:text="set timer" />
 
 
 </RelativeLayout>
