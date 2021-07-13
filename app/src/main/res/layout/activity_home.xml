@@ -8,6 +8,7 @@
     tools:context=".SplashActivity">
 
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,6 +18,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cb_header"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -36,16 +44,6 @@
                 app:cardCornerRadius="@dimen/_10sdp"
                 app:cardElevation="@dimen/_10sdp">
 
-
-                <SearchView
-                    android:id="@+id/search_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/search_bg"
-                    android:iconifiedByDefault="false"
-                    android:queryBackground="@color/transparent"
-                    android:queryHint="Search for recipes"
-                    android:theme="@style/ThemeOverlay.Search" />
 
             </androidx.cardview.widget.CardView>
 

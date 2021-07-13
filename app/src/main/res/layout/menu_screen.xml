@@ -18,12 +18,12 @@
 
 <Button
     android:id="@+id/button"
-    android:layout_width="@dimen/_135sdp"
+    android:layout_width="@dimen/_130sdp"
     android:layout_height="@dimen/_124sdp"
     android:layout_alignParentStart="true"
     android:layout_alignParentTop="true"
     android:layout_marginStart="20dp"
-    android:layout_marginTop="@dimen/_200sdp"
+    android:layout_marginTop="@dimen/_250sdp"
     android:textColor="@color/white"
     android:fontFamily="@font/acid_bold"
     android:textSize="@dimen/_20ssp"
@@ -31,11 +31,11 @@
 
 <Button
     android:id="@+id/button2"
-    android:layout_width="@dimen/_135sdp"
+    android:layout_width="@dimen/_130sdp"
     android:layout_height="@dimen/_125sdp"
     android:layout_alignParentTop="true"
     android:layout_alignParentEnd="true"
-    android:layout_marginTop="@dimen/_200sdp"
+    android:layout_marginTop="@dimen/_250sdp"
     android:layout_marginEnd="20dp"
     android:fontFamily="@font/acid_bold"
     android:textSize="@dimen/_20ssp"
@@ -44,12 +44,12 @@
 
 <Button
     android:id="@+id/button3"
-    android:layout_width="@dimen/_135sdp"
+    android:layout_width="@dimen/_130sdp"
     android:layout_height="@dimen/_125sdp"
     android:layout_alignParentStart="true"
     android:layout_alignParentBottom="true"
     android:layout_marginStart="20dp"
-    android:layout_marginBottom="@dimen/_75sdp"
+    android:layout_marginBottom="@dimen/_100sdp"
     android:fontFamily="@font/acid_bold"
     android:textSize="@dimen/_20ssp"
     android:textColor="@color/white"
@@ -57,12 +57,12 @@
 
 <Button
     android:id="@+id/button4"
-    android:layout_width="@dimen/_135sdp"
+    android:layout_width="@dimen/_130sdp"
     android:layout_height="@dimen/_125sdp"
     android:layout_alignParentEnd="true"
     android:layout_alignParentBottom="true"
     android:layout_marginEnd="20dp"
-    android:layout_marginBottom="@dimen/_75sdp"
+    android:layout_marginBottom="@dimen/_100sdp"
     android:fontFamily="@font/acid_bold"
     android:textSize="@dimen/_20ssp"
     android:textColor="@color/white"
